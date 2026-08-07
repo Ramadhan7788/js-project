@@ -36,7 +36,7 @@ These projects focus on JavaScript fundamentals such as:
 | #  | Project                   | Status |
 | -- | ------------------------- | :----: |
 | 01 | Greeting Builder          |    ✅   |
-| 02 | Temperature Converter     |    ⬜   |
+| 02 | Temperature Converter     |    ✅   |
 | 03 | Number Checker            |    ⬜   |
 | 04 | String Formatter          |    ⬜   |
 | 05 | Price Calculator          |    ⬜   |
