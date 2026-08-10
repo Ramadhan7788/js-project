@@ -37,9 +37,9 @@ These projects focus on JavaScript fundamentals such as:
 | -- | ------------------------- | :----: |
 | 01 | Greeting Builder          |    ✅   |
 | 02 | Temperature Converter     |    ✅   |
-| 03 | Number Checker            |    ⬜   |
-| 04 | String Formatter          |    ⬜   |
-| 05 | Price Calculator          |    ⬜   |
+| 03 | Number Checker            |    ✅   |
+| 04 | String Formatter          |    ✅   |
+| 05 | Price Calculator          |    ✅   |
 | 06 | Cart Total Calculator     |    ⬜   |
 | 07 | Grade Report Generator    |    ⬜   |
 | 08 | Task List Utilities       |    ⬜   |
