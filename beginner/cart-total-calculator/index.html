@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Playfair+Display:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="Logo-new.svg">
+    <title>Helloww!</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Calculator</title>
+</head>
+<body>
+
+    <form id="invoice-form">
+        <table border="1" cellpadding="8" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Deskripsi</th>
+                    <th>Qty</th>
+                    <th>Harga Satuan</th>
+                    <th>Discount (%)</th>
+                    <th>Pajak (%)</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="description-1" name="description[]"></td>
+                    <td><input type="text" id="qty-1" name="qty[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="price-1" name="price[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="discount-1" name="discount[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="tax-1" name="tax[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="subtotal-1" name="subtotal[]" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="description-2" name="description[]"></td>
+                    <td><input type="text" id="qty-2" name="qty[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="price-2" name="price[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="discount-2" name="discount[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="tax-2" name="tax[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="subtotal-2" name="subtotal[]" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="description-3" name="description[]"></td>
+                    <td><input type="text" id="qty-3" name="qty[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="price-3" name="price[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="discount-3" name="discount[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="tax-3" name="tax[]" value="0" oninput="formatAndCalculate(this)"></td>
+                    <td><input type="text" id="subtotal-3" name="subtotal[]" value="0" readonly></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary" style="margin-top: 15px;">
+            <p>Total Jumlah Barang: <span id="total-quantity">0</span></p>
+            <p>Total Harga (Sebelum Diskon/Pajak): <span id="total-price">0</span></p>
+            <p>Total Potongan: <span id="total-discount">0</span></p>
+            <p>Total Pajak: <span id="total-tax">0</span></p>
+            <p><strong>Total Akhir: <span id="grand-total">0</span></strong></p>
+        </div>
+
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
