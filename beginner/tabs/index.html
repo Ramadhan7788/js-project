@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Playfair+Display:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="Logo-new.svg">
+
+    <title>Tab</title>
+</head>
+<body>
+    <main class="tabs-container">
+        <nav class="tabs-nav" role="tablist" aria-label="Navigasi Tab">
+            <button 
+                type="button"
+                class="tab-btn active" 
+                role="tab" 
+                aria-selected="true" 
+                aria-controls="tab-1" 
+                id="btn-tab-1">
+                Tab 1
+            </button>
+
+            <button 
+                type="button"
+                class="tab-btn" 
+                role="tab" 
+                aria-selected="false" 
+                aria-controls="tab-2" 
+                id="btn-tab-2">
+                Tab 2
+            </button>
+
+            <button 
+                type="button"
+                class="tab-btn" 
+                role="tab" 
+                aria-selected="false" 
+                aria-controls="tab-3" 
+                id="btn-tab-3">
+                Tab 3
+            </button>
+
+            <button 
+                type="button"
+                class="tab-btn" 
+                role="tab" 
+                aria-selected="false" 
+                aria-controls="tab-4" 
+                id="btn-tab-4">
+                Tab 4
+            </button>
+        </nav>
+        <header class="content-header">
+            <h1>Tabs</h1>
+            <p>Clicking each tab shuld hide the content of the other tab and show the content of clicked tab. By default, enable the forst tab.</p>
+        </header>
+        <div class="tabs-content">
+            <section 
+                id="tab-1" 
+                class="tab-panel active" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-1">
+                <h2>Konten Tab 1</h2>
+                <p>Ini adalah isi konten untuk Tab 1. Tab ini aktif secara default.</p>
+            </section>
+
+            <section 
+                id="tab-2" 
+                class="tab-panel" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-2" 
+                hidden>
+                <h2>Konten Tab 2</h2>
+                <p>Ini adalah isi konten untuk Tab 2.</p>
+            </section>
+
+            <section 
+                id="tab-3" 
+                class="tab-panel" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-3" 
+                hidden>
+                <h2>Konten Tab 3</h2>
+                <p>Ini adalah isi konten untuk Tab 3.</p>
+            </section>
+
+            <section 
+                id="tab-4" 
+                class="tab-panel" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-4" 
+                hidden>
+                <h2>Konten Tab 4</h2>
+                <p>Ini adalah isi konten untuk Tab 4.</p>
+            </section>
+        </div>
+        <footer class="footer-content">
+            <p>Add some dummy content or just add a simple text showing the tab.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
