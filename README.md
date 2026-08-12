@@ -40,21 +40,12 @@ These projects focus on JavaScript fundamentals such as:
 | 03 | Number Checker            |    ✅   |
 | 04 | String Formatter          |    ✅   |
 | 05 | Price Calculator          |    ✅   |
-| 06 | Cart Total Calculator     |    ⬜   |
-| 07 | Grade Report Generator    |    ⬜   |
-| 08 | Task List Utilities       |    ⬜   |
-| 09 | Expense Summary           |    ⬜   |
-| 10 | Product Search and Filter |    ⬜   |
-| 11 | User Profile Formatter    |    ⬜   |
-| 12 | Quiz Score Calculator     |    ⬜   |
-| 13 | JSON Response Normalizer  |    ⬜   |
-| 14 | Password Rule Checker     |    ⬜   |
-| 15 | Order Status Helper       |    ⬜   |
-| 16 | Simple Tabs               |    ⬜   |
-| 17 | Cookie Consent            |    ⬜   |
-| 18 | Restricted Textarea       |    ⬜   |
-| 19 | Accordion                 |    ⬜   |
-| 20 | Age Calculator            |    ⬜   |
+| 06 | Cart Total Calculator     |    ✅   |
+| 07 | Simple Tabs               |    ✅   |
+| 08 | Cookie Consent            |    ✅   |
+| 09 | Restricted Textarea       |    ⬜   |
+| 10 | Accordion                 |    ⬜   |
+| 11 | Age Calculator            |    ⬜   |
 
 ---
 
@@ -102,15 +93,6 @@ These projects combine JavaScript, APIs, state management, and more complex UI i
 * String Formatter — https://roadmap.sh/projects/js-string-formatter
 * Price Calculator — https://roadmap.sh/projects/js-price-calculator
 * Cart Total Calculator — https://roadmap.sh/projects/js-cart-total-calculator
-* Grade Report Generator — https://roadmap.sh/projects/js-grade-report-generator
-* Task List Utilities — https://roadmap.sh/projects/js-task-list-utilities
-* Expense Summary — https://roadmap.sh/projects/js-expense-summary
-* Product Search and Filter — https://roadmap.sh/projects/js-product-search-and-filter
-* User Profile Formatter — https://roadmap.sh/projects/js-user-profile-formatter
-* Quiz Score Calculator — https://roadmap.sh/projects/js-quiz-score-calculator
-* JSON Response Normalizer — https://roadmap.sh/projects/js-json-response-normalizer
-* Password Rule Checker — https://roadmap.sh/projects/js-password-rule-checker
-* Order Status Helper — https://roadmap.sh/projects/js-order-status-helper
 * Simple Tabs — https://roadmap.sh/projects/simple-tabs
 * Cookie Consent — https://roadmap.sh/projects/cookie-consent
 * Restricted Textarea — https://roadmap.sh/projects/restricted-textarea
@@ -135,11 +117,11 @@ These projects combine JavaScript, APIs, state management, and more complex UI i
 
 # Progress
 
-* Beginner: **1 / 20**
+* Beginner: **8 / 11**
 * Intermediate: **0 / 7**
 * Advanced: **0 / 1**
 
-**Total Progress:** **1 / 28 Projects**
+**Total Progress:** **8 / 19 Projects**
 
 ---
 
