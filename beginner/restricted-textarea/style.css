@@ -1,0 +1,284 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-bg: #0a0e1a;
+    --color-surface: #131a2b;
+    --color-surface-sec: #1a2338;
+    --color-accent: #4a6fa5;
+    --color-accent-sec: #6690c9;
+    --color-text: #ffffff;
+    --color-text-sec: #9aa5b8;
+    --color-border: #232d45;
+    --color-focus: #6690c9;
+    --color-focus-shadow: rgba(102, 144, 201, 0.2);
+
+    --fs-display: clamp(2.25rem, 1.75rem + 2.5vw, 3rem);
+    --fs-h1:      clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem);
+    --fs-h2:      clamp(1.5rem, 1.25rem + 1.25vw, 1.875rem);
+    --fs-h3:      clamp(1.25rem, 1.1rem + .75vw, 1.5rem);
+    --fs-body:    1.125rem;
+    --fs-small:   clamp(.9375rem, .9rem + .1875vw, 1rem);
+    --fs-xs:   clamp(.7375rem, .7rem + .1375vw, 0.8rem);
+
+    --font-hero-heading: "Playfair Display", Georgia, serif;
+    --font-sub-heading: "Space Grotesk", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-code: "JetBrains Mono", "Cascadia Code", Consolas, "Courier New", monospace;
+
+    --space-3xs: clamp(.25rem, .23rem + .1vw, .3125rem);
+    --space-2xs: clamp(.5rem, .46rem + .2vw, .625rem);
+    --space-xs:  clamp(.75rem, .68rem + .35vw, .9375rem);
+    --space-sm:  clamp(1rem, .9rem + .5vw, 1.25rem);
+    --space-md:  clamp(1.5rem, 1.3rem + 1vw, 2rem);
+    --space-lg:  clamp(2rem, 1.7rem + 1.5vw, 2.75rem);
+    --space-xl:  clamp(3rem, 2.4rem + 3vw, 4.5rem);
+    --space-2xl: clamp(4rem, 3.2rem + 4vw, 6rem);
+
+    --border-radius: 20px;
+    --border-radius-sm: 10px;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+p { font-size: var(--fs-body); }
+small { font-size: var(--fs-small); }
+
+h1, figcaption, cite, label { font-family: var(--font-hero-heading); }
+h2, h3, h4, h5, h6 { font-family: var(--font-sub-heading); }
+code, pre { font-family: var(--font-code); }
+
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: var(--space-sm);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: var(--space-md);
+}
+
+.tabs-container {
+  width: 90%;
+  background: var(--color-surface);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 4px 10px var(--color-focus-shadow);
+  overflow: hidden;
+}
+
+.tabs-nav {
+    display: flex;
+    background-color: var(--color-surface-sec);
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  color: var(--color-text);
+}
+
+.tab-btn:hover {
+  background-color: var(--color-focus);
+}
+
+.tab-btn.active {
+  background-color: var(--color-focus);
+  color: var(--color-text-sec);
+  border-bottom: 3px solid var(--color-border);
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 0.5rem;
+}
+
+.tabs-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--color-surface-sec);
+  border-radius: var(--border-radius);
+  margin: 1.5rem;
+}
+
+.tabs-content p {
+  margin:1rem 0;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.footer-content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background: var(--color-surface);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 4px 10px var(--color-focus-shadow);
+  padding: var(--space-md);
+  gap: var(--space-sm);
+  align-items: center;
+  
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--space-2xs);
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group input {
+  width: 70%;
+  padding: var(--space-2xs);
+  background: var(--color-surface-sec);
+}
+
+.form-group label {
+  display: flex;
+  align-items: center
+}
+
+.form-group label.message {
+  display: flex;
+  align-items: flex-start;
+}
+
+.textarea-wrapper {
+  position: relative;
+  width: 70%;
+  display: flex; 
+  flex-direction: column;
+}
+
+.textarea-wrapper textarea {
+  padding: var(--space-2xs);
+  padding-bottom: var(--space-md);
+  background: var(--color-surface-sec);
+  resize: vertical;
+  field-sizing: content;
+}
+
+textarea.limit-reached {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 1px #e53e3e;
+}
+
+.char-counter.limit-reached {
+  color: #e53e3e;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+  button:hover {
+  background-color: #0052a3;
+}
+
+.char-counter {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  color: var(--color-text);
+  font-size: var(--fs-xs);
+  pointer-events: none;
+}
+
+.cookie-ban {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45vw;
+  background-color: var(--color-surface);
+  padding: var(--space-sm);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cookie-ban.hidden {
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: var(--fs-h2);
+  cursor: pointer;
+}
+
+.cookie-icon {
+  width: 50px;
+}
+
+.cookie-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.accept-btn {
+  width: 80%;
+  background-color: var(--color-surface-sec);
+  color: var(--colot-text);
+  border: none;
+  padding: var(--space-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--fs-h3);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.accept-btn:hover {
+  background-color: var(--color-focus);
+}

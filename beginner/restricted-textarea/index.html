@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Playfair+Display:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="svg/Logo-new.svg">
+
+    <title>Tab</title>
+</head>
+<body>
+    <main class="tabs-container">
+        <nav class="tabs-nav" role="tablist" aria-label="Navigasi Tab">
+            <button 
+                type="button"
+                class="tab-btn active" 
+                role="tab" 
+                aria-selected="true" 
+                aria-controls="tab-1" 
+                id="btn-tab-1">
+                Tab 1
+            </button>
+
+            <button 
+                type="button"
+                class="tab-btn" 
+                role="tab" 
+                aria-selected="false" 
+                aria-controls="tab-2" 
+                id="btn-tab-2">
+                Tab 2
+            </button>
+
+            <button 
+                type="button"
+                class="tab-btn" 
+                role="tab" 
+                aria-selected="false" 
+                aria-controls="tab-3" 
+                id="btn-tab-3">
+                Tab 3
+            </button>
+
+            <button 
+                type="button"
+                class="tab-btn" 
+                role="tab" 
+                aria-selected="false" 
+                aria-controls="tab-4" 
+                id="btn-tab-4">
+                Tab 4
+            </button>
+        </nav>
+        <header class="content-header">
+            <h1>Tabs</h1>
+            <p>Clicking each tab shuld hide the content of the other tab and show the content of clicked tab. By default, enable the forst tab.</p>
+        </header>
+        <div class="tabs-content">
+            <section 
+                id="tab-1" 
+                class="tab-panel active" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-1">
+                <h2>Konten Tab 1</h2>
+                <p>Ini adalah isi konten untuk Tab 1. Tab ini aktif secara default.</p>
+            </section>
+
+            <section 
+                id="tab-2" 
+                class="tab-panel" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-2" 
+                hidden>
+                <h2>Konten Tab 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique placerat ante sit amet pulvinar. Sed malesuada viverra risus et tristique. Aliquam erat volutpat. Aliquam erat volutpat. Nulla ornare neque ac mauris aliquet, id commodo libero ullamcorper. Etiam tincidunt erat sit amet ante malesuada facilisis. Donec fringilla molestie venenatis. Proin id ex id nulla tristique accumsan. Curabitur porta accumsan ultrices.</p>
+                <p>Phasellus consectetur sit amet odio vitae euismod. Proin viverra convallis mi at tempus. Quisque quam dolor, rutrum vitae condimentum nec, dignissim ac mauris. Nunc sollicitudin nec nulla ac ornare. Morbi hendrerit, diam vel malesuada commodo, ipsum dui molestie velit, nec pretium odio nisl ut nibh. Aliquam dictum ante diam, a blandit mi scelerisque vel. Aliquam et convallis felis, fringilla volutpat sem. Curabitur blandit ornare quam non sagittis. Quisque vel tempus justo, sed mollis augue. Nulla facilisi. Suspendisse placerat placerat nisl, id porttitor arcu lobortis non.</p>
+                <p>Aliquam eget sem at sapien sodales congue. Sed condimentum a mi id varius. Sed tempor lectus et odio lobortis, nec sodales elit dictum. Morbi eros neque, sagittis non sem in, tempor aliquet mauris. Suspendisse tincidunt sapien ac lorem blandit, at egestas quam posuere. Duis sollicitudin consequat felis, sit amet maximus enim consectetur ut. Duis pellentesque enim mi, ac bibendum massa auctor at. Praesent eget sodales urna, quis consequat risus. Curabitur aliquet vestibulum viverra. Aenean sem ante, mollis ac odio ac, ultricies posuere leo. Sed ultricies metus eget magna sodales condimentum. Nullam in quam eu lorem sodales viverra. Praesent dictum, sem et vestibulum vestibulum, arcu augue euismod mi, vel facilisis urna lacus non sem.</p>
+                <p>Donec tincidunt massa enim, sed rutrum elit facilisis mattis. Sed suscipit magna eu eleifend elementum. Fusce in lacinia tortor. Morbi justo ipsum, aliquet at massa et, hendrerit ultrices turpis. Mauris semper tortor eu dolor placerat auctor. Praesent et ante a sem tincidunt congue. Mauris egestas ex id quam sodales, ac pulvinar leo ultrices. Nullam a cursus odio. Suspendisse dictum nunc ac dolor congue, nec eleifend justo euismod. Maecenas semper sapien sodales tortor semper, luctus lacinia magna congue. Donec aliquet vestibulum diam at mattis. Ut tincidunt nisi eget ante malesuada rutrum.</p>
+            </section>
+
+            <section 
+                id="tab-3" 
+                class="tab-panel" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-3" 
+                hidden>
+                <h2>Konten Tab 3</h2>
+                <p>Ini adalah isi konten untuk Tab 3.</p>
+            </section>
+
+            <section 
+                id="tab-4" 
+                class="tab-panel" 
+                role="tabpanel" 
+                aria-labelledby="btn-tab-4" 
+                hidden>
+                <h2>Konten Tab 4</h2>
+                <p>Ini adalah isi konten untuk Tab 4.</p>
+            </section>
+        </div>
+        <footer class="footer-content">
+            <p>Add some dummy content or just add a simple text showing the tab.</p>
+        </footer>
+    </main>
+    <div class="form-container">
+        <h2>Hubungi Kami</h2>
+        <form class="contact-form" id="contact-form">
+        
+        <div class="form-group">
+            <label for="fullname">Nama Lengkap</label>
+            <input type="text" id="fullname" placeholder="Masukkan nama lengkap" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="contoh@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" placeholder="Subjek pesan" required>
+        </div>
+
+        <div class="form-group">
+            <label class="message" for="message">Pesan</label>
+            <div class="textarea-wrapper">
+                <textarea 
+                    id="message" 
+                    maxlength="200" 
+                    placeholder="Tuliskan pesan Anda di sini (maks. 200 karakter)..." 
+                    required></textarea>
+                <div class="char-counter" id="counter-info">
+                    <span id="char-count">0</span> / <span id="max-count">200</span> Karakter
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Kirim Pesan</button>
+
+        </form>
+    </div>
+    <aside class="cookie-ban hidden" id="cookie-ban">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <div class="cookie-icon">    
+            <img src="svg/cookie-svgrepo-com.svg" alt="cookie icon">
+        </div>
+        <p class="cookie-message">We use cookies to improve your user experience.</p>
+        <button class="accept-btn" id="accept-btn">I like Cookies</button>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -43,7 +43,7 @@ These projects focus on JavaScript fundamentals such as:
 | 06 | Cart Total Calculator     |    ✅   |
 | 07 | Simple Tabs               |    ✅   |
 | 08 | Cookie Consent            |    ✅   |
-| 09 | Restricted Textarea       |    ⬜   |
+| 09 | Restricted Textarea       |    ✅   |
 | 10 | Accordion                 |    ⬜   |
 | 11 | Age Calculator            |    ⬜   |
 
@@ -117,7 +117,7 @@ These projects combine JavaScript, APIs, state management, and more complex UI i
 
 # Progress
 
-* Beginner: **8 / 11**
+* Beginner: **9 / 11**
 * Intermediate: **0 / 7**
 * Advanced: **0 / 1**
 
