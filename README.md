@@ -44,7 +44,7 @@ These projects focus on JavaScript fundamentals such as:
 | 07 | Simple Tabs               |    ✅   |
 | 08 | Cookie Consent            |    ✅   |
 | 09 | Restricted Textarea       |    ✅   |
-| 10 | Accordion                 |    ⬜   |
+| 10 | Accordion                 |    ✅   |
 | 11 | Age Calculator            |    ⬜   |
 
 ---
@@ -117,11 +117,11 @@ These projects combine JavaScript, APIs, state management, and more complex UI i
 
 # Progress
 
-* Beginner: **9 / 11**
+* Beginner: **10 / 11**
 * Intermediate: **0 / 7**
 * Advanced: **0 / 1**
 
-**Total Progress:** **8 / 19 Projects**
+**Total Progress:** **10 / 19 Projects**
 
 ---
 
