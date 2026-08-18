@@ -95,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   accordionItems.forEach((item) => {
     const header = item.querySelector(".accordion-header");
-    const content = item.querySelector(".accordion-content");
 
     header.addEventListener("click", () => {
       const isActive = item.classList.contains("active");
@@ -108,9 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!isActive) {
         item.classList.add("active");
-        
-        const dynamicHeight = content.scrollHeight * 1.5;
-        content.style.maxHeight = dynamicHeight + "px";
+        const content = item.querySelector(".accordion-content");
+        content.style.maxHeight = content.scrollHeight + 30 + "px";
       }
     });
   });

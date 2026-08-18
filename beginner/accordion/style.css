@@ -239,10 +239,15 @@ textarea.limit-reached {
   border: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   border-radius: var(--border-radius-sm);
   background: var(--color-accent);
-  transition: border-radius 0.02s ease;
+  transition: border-radius 0.3s ease;
+}
+
+.accordion-header .icon {
+  transition: transform 0.3s ease;
 }
 
 .accordion-item.active .accordion-header {
